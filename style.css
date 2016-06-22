@@ -133,7 +133,7 @@ header.sticky {
     #76a7ac 300px,#76a7ac 400px,#93ae65 400px,#93ae65 500px,#dbb16f 500px);
       background-color: #f2f2f2;background-size: 600px 10px}
 
-        @media (max-width: 480px) { 
+        @media { 
       .body {
       height: 1800;
     }
