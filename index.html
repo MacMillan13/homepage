@@ -15,13 +15,27 @@ if ($(this).scrollTop() > 1){
     $('header').removeClass("sticky");
   }
 });
-</script>
-<script type="text/javascript">
 	$(document).ready(function(){
     $(document).on("click", ".like , .myf", function() {
 alert("Register on GitHub!");
     });
 	});
+	(function(){
+		var interval = 2000;
+		var colors = [,'#000','#696969']
+
+		function changeColor(){
+			var currentColor = colors.shift();
+			$('h2.resume').get(0).style.color = currentColor;
+			colors.push(currentColor);
+		}
+
+		setInterval(changeColor, interval);
+	})();
+	
+	if(color= '#696969') {
+		$(".style.color= '#000'").show();
+	}
 </script>
 </head>
 <body>
@@ -68,24 +82,6 @@ alert("Register on GitHub!");
 <h4>Профессиональные навыки:</h4> <p>опытный пользователь ПК,HTML,CSS,JavaScript,JQuery,Photoshop. Базовое знание английского языка.</p>
 <h4>Личные качества:</h4> <p>ответственность, организованность, целеустремленность, трудолюбие,усидчивость.</p>
 </div>
-<script type="text/javascript">
-		(function(){
-		var interval = 2000;
-		var colors = [,'#000','#696969']
-
-		function changeColor(){
-			var currentColor = colors.shift();
-			$('h2.resume').get(0).style.color = currentColor;
-			colors.push(currentColor);
-		}
-
-		setInterval(changeColor, interval);
-	})();
-	
-	if(color= '#696969') {
-		$(".style.color= '#000'").show();
-	}
-</script>
 </body>
     <div class="footer">
     <div class="mid">
