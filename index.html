@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Moiseev</title>
-	<style>
-
-    html {
-      margin: 0px;
-      height: 1500px;
-      margin-top: 0px;
-      margin-left:0px;
-    }
+	<title></title>
+	<style type="text/css">
+	body{margin-left: 0;margin-right:0;margin-top:50px;padding: 0;height: 2500px;height: -moz-(2500px);}
 header{
-	height:100px;
   position: fixed;
   width: 100%;
   text-align: center;
-  font-size: 46px;
-  line-height: 75px;
-  background: white url(https://cloud.githubusercontent.com/assets/18086617/16282825/aa62c7a4-38ca-11e6-9655-47a6e6e00c11.jpg);
+  font-size: 72px;
+  line-height: 108px;
+  height: 108px;
+  background: #1E90FF;
   color: #87CEFA;
   font-family: 'PT Sans', sans-serif;
-  transition: all 0.7s ease;
+  transition: all 1s ease;
   text-shadow: 2px 2px 3px #777;
   border:1px solid #ebebee;
   border-bottom:3px solid #ddd;
 }
 header.sticky {
-  font-size: 36px;
+  font-size: 46px;
   line-height: 48px;
   height: 48px;
-  background: white url(https://cloud.githubusercontent.com/assets/18086617/16282836/c074b46c-38ca-11e6-97f6-3d38bd719a4b.jpg);
+  background: #228B22;
   text-align: left;
-  padding-left: 20px
-  color: #87CEFA;
+  padding-left: 20px;
+  color: #98FB98;
 }
 .nos{
-  padding-top:400px;
-  text-align: center;
-  text-shadow: 2px 2px 3px #777;
+	padding-top:400px;
+	text-align: center;
+	text-shadow: 2px 2px 3px #777;
 }
-	</style>
-	<link rel="shortcut icon" type="image/x-icon" href="https://cloud.githubusercontent.com/assets/18086617/16282812/95b944c2-38ca-11e6-90f6-1e5c034dc9d2.jpg">
-	<link rel="stylesheet" type="text/css" href="style.css" media="all">
-	<meta charset="utf-8">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</style>
+	<link rel="shortcut icon" type="image/x-icon" href="images.11/logojs1.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript">
 $(window).scroll(function() {
 if ($(this).scrollTop() > 1){  
@@ -53,9 +46,27 @@ if ($(this).scrollTop() > 1){
     $('header').removeClass("sticky");
   }
 });
-
+</script>
+<script type="text/javascript">
+	(function(){
+		var interval = 2000;
+		var colors = ['red', 'green', 'blue', 'orange', 'yellow']
+		function changeColor(){
+			var currentColor = colors.shift();
+			$('h1.nos').get(0).style.color = currentColor;
+			colors.push(currentColor);
+		}
+		setInterval(changeColor, interval);
+	})();
+	
+	if(color= 'yellow') {
+		$(".style.color= 'green'").show();
+	}
+</script>
 </head>
-<header>Vlad MacMillan</header>
+<header>Vlad Moiseev product!</header>
 <body>
+<h1 class="nos">Want to find a job...</h1>
 </body>
 </html>
+
